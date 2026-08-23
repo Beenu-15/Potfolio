@@ -1,0 +1,479 @@
+
+/* -----------------------------------------HEADER SECTION------------------------------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 20px 50px;
+}
+
+.logo h2{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #38bdf8;
+}
+/* --------------------------------------------HERO SECTION------------------------------------------------- */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color:rgb(35, 2, 67);
+}
+
+.hero-text{
+    width: 55%;
+}
+
+.hero-text h1{
+    font-size: 48px;
+    color: #320c8d;
+    margin-bottom: 10px;
+}
+
+.hero-text span{
+    color: #0077b6;
+}
+
+.hero-text h2{
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: hsl(180, 92%, 25%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: #023e8a;
+}
+
+.hero-image{
+    width: 40%;
+    text-align: center;
+}
+
+.hero-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #0077b6;
+    object-fit: cover;
+}
+
+/* -----------------------------------------ABOUT SECTION-------------------------------------------------------- */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 10%;
+    background-color: rgba(236, 125, 216, 0.956);
+}
+
+/* .about-image{
+    width: 40%;
+    text-align: center;
+} */
+
+.about-image img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about-content{
+    width: 55%;
+}
+
+.about-content h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-content h2 span{
+    color: #0077b6;
+}
+
+.about-content h3{
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-content p{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-btn:hover{
+    background-color: #023e8a;
+}
+/* ------------------------------------------------SKILL  SECTION------------------------------------------------------------- */
+
+.skills{
+    padding: 80px 10%;
+    background-color: #9d7878b9;
+    text-align: center;
+}
+
+.skills h2{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.skills h2 span{
+    color: #0077b6;
+}
+
+.skills-intro{
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card{
+    background-color: rgba(15, 30, 44, 0.838);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.skill-card h3{
+    font-size: 24px;
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+.skill-card p{
+    color: #666;
+    line-height: 1.6;
+}
+
+.skill-card:hover{
+    transform: translateY(-8px);
+}
+
+/* ------------------------------------------PROJECT SECTION---------------------------------------------------- */
+.projects{
+    padding: 80px 10%;
+    background-color: rgba(182, 121, 229, 0.747);
+    text-align: center;
+}
+
+.projects h2{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.projects h2 span{
+    color: #0077b6;
+}
+
+.projects-intro{
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card{
+    padding: 30px 25px;
+    background-color: #0e1115;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.project-card h3{
+    font-size: 24px;
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+.project-card p{
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+}
+
+.project-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-btn:hover{
+    background-color: #023e8a;
+}
+
+/* ----------------------------------EDUCATION SECTION-------------------------------------------------------------------- */
+.education{
+    padding: 80px 10%;
+    background-color: #83e2f0;
+    text-align: center;
+}
+
+.education h2{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.education h2 span{
+    color: #0077b6;
+}
+
+.education-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.education-card{
+    background-color: rgba(46, 6, 27, 0.701);
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.education-card:hover{
+    transform: translateY(-8px);
+}
+
+.education-card h3{
+    font-size: 23px;
+    color: #0077b6;
+    margin-bottom: 12px;
+}
+
+.education-card h4{
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.education-card p{
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.education-year{
+    font-weight: bold;
+    color: #0077b6 !important;
+}
+
+
+
+/* ------------------------------------------------CONTECT SECTION--------------------------------------------------- */
+.contact{
+    padding: 80px 10%;
+    background-color: rgba(47, 21, 178, 0.305);
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact h2 span{
+    color: #0077b6;
+}
+
+.contact-intro{
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: left;
+}
+
+.contact-info{
+    width: 45%;
+}
+
+.contact-info h3{
+    font-size: 28px;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.contact-info p{
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.contact-info a{
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #0077b6;
+}
+
+.contact-form button{
+    padding: 13px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: #023e8a;
+}
+
+
+/* -------------------------------------------------------FOOTER SECTION---------------------------------------- */
+.footer{
+    background-color: #1f2937;
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-content h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer-content > p{
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.footer-links{
+    margin-bottom: 20px;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #38bdf8;
+}
+
+.copyright{
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* ------------------------------------------------------------END---------------------------------------------------- */
